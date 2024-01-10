@@ -1,7 +1,5 @@
 <mat-toolbar class="max-w-7x1 mx-auto border-x justify-between">
-  <mat-icon *ngIf="screenSizeService.isHandset$ | async" (click)="menuClicked()"
-    >menu</mat-icon
-  >
+  <mat-icon (click)="menuClicked()">menu</mat-icon>
   <a routerLink="/home" routerLinkActive="active">Your Brand's WebShop </a>
   <button mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon
